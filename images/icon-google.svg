@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="30" viewBox="0 0 98 30">
+  <g id="Group_31" data-name="Group 31" transform="translate(-172.04 -1824.578)">
+    <g id="Rectangle_68" data-name="Rectangle 68" transform="translate(172.04 1824.578)" stroke="#dedddd" stroke-width="1">
+      <rect width="98" height="30" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="97" height="29" rx="4.5" fill="none"/>
+    </g>
+    <path id="Icon_simple-googleplay" data-name="Icon simple-googleplay" d="M1.791,0A.8.8,0,0,0,1.74.262V19.984a.493.493,0,0,0,.156.393l9.692-10.267ZM12.242,10.789l2.505,2.585L11.17,15.412S6.624,18,4.116,19.436Zm.68-.706,2.688,2.8c.421-.234,3.711-2.116,4.181-2.377.5-.287.446-.679.025-.888-.39-.217-3.68-2.1-4.177-2.407l-2.719,2.88ZM12.24,9.4l2.534-2.691L11.157,4.65S5.263,1.278,3.3.152L12.242,9.4Z" transform="translate(179.035 1829.609)" fill="#267f9a"/>
+    <text id="GET_IN_ON_" data-name="GET IN ON " transform="translate(201.04 1827.578)" fill="#fff" font-size="7" font-family="Optima-Regular, Optima"><tspan x="0" y="6">GET IN ON </tspan></text>
+    <text id="Google_Play" data-name="Google Play" transform="translate(201.04 1835.578)" fill="#fff" font-size="12" font-family="Optima-Regular, Optima"><tspan x="0" y="11">Google Play</tspan></text>
+  </g>
+</svg>

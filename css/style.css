@@ -1,0 +1,441 @@
+@font-face {
+  font-family: "optima";
+  src: url(../Optima-Font/unicode.optima.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+.intro-background,
+.hikes-background,
+.short-hikes-background,
+.long-hikes-background,
+.camping-hikes-background,
+.about-background,
+.contact-background {
+  background-image: url(../images/camel.jpg);
+  background-size: cover;
+  max-width: 100%;
+  min-height: 650px;
+  background-position: center;
+  padding: 0%;
+  margin: 0%;
+}
+.hikes-background {
+  background-image: url(../images/tour-background.jpeg);
+  min-height: 500px;
+}
+.short-hikes-background {
+  background-image: url(../images/short-hikes-background.jpeg);
+  min-height: 500px;
+}
+.long-hikes-background {
+  background-image: url(../images/long-hikes-background.jpg);
+  min-height: 500px;
+}
+.camping-hikes-background {
+  background-image: url(../images/camping-hikes-background.jpg);
+  min-height: 500px;
+}
+.about-background {
+  background-image: url(../images/hikes-background.jpg);
+  min-height: 500px;
+}
+.contact-background {
+  background-image: url(../images/contact-background.jpeg);
+  min-height: 500px;
+}
+.icon {
+  margin: 10px 20px;
+}
+nav {
+  float: right;
+  padding: 0px 70px;
+}
+nav li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+nav li a,
+h1,
+h2,
+h3,
+.intro-button {
+  text-decoration: none;
+  color: #484646;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 5px;
+}
+nav li a {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 5px 11px;
+}
+nav li a:hover,
+.link-wrapper a:hover {
+  color: #208c7b;
+  transition: 0.3s;
+}
+.active {
+  background-color: #8c5320;
+  color: #ffffff;
+  border: none;
+  padding: 5px 4px;
+}
+#hamburger-menu,
+.hamburger-label {
+  display: none;
+}
+p,
+form label,
+a {
+  font-family: "optima";
+  font-weight: 100;
+}
+h1 {
+  padding: 0;
+  font-size: 25px;
+}
+
+h3,
+p,
+.link-wrapper a {
+  font-size: 19px;
+}
+.intro-text,
+.tour-text h1,
+.short-hikes-text h1,
+.long-hikes-text h1,
+.camping-hikes-text h1,
+.about-text h1,
+.contact-text h1 {
+  text-align: center;
+  margin: 20% auto 0px;
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 200px;
+  border-radius: 5px;
+}
+.short-hikes-text h1,
+.long-hikes-text h1,
+.camping-hikes-text h1 {
+  background: #8c5320;
+  color: #ffffff;
+}
+.tour-text h1,
+.short-hikes-text h1,
+.long-hikes-text h1,
+.camping-hikes-text h1,
+.about-text h1,
+.contact-text h1 {
+  margin-top: 100px;
+  max-width: 200px;
+  padding: 10px;
+}
+.intro-text {
+  max-width: 400px;
+}
+h2 {
+  text-align: center;
+}
+
+.text,
+.hikes-text,
+.short-hikes-text {
+  max-width: 80%;
+  margin: 20px auto;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.section-container,
+.hikes-container,
+.short-hikes-container,
+.long-hikes-container,
+.camping-hikes-container,
+.guid-container,
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  column-gap: 25px;
+  row-gap: 15px;
+  justify-items: center;
+  margin: 0px 0px 10px;
+}
+.section-container img,
+.hikes-container img,
+.short-hikes-container img,
+.long-hikes-container img,
+.camping-hikes-container img {
+  max-width: 400px;
+  min-height: 350px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.hikes,
+.hikes-items {
+  background-color: #d0e4fa;
+  border-radius: 5px;
+  max-width: 100%;
+  min-height: 600px;
+  text-align: center;
+}
+.hikes-items {
+  min-height: 740px;
+}
+.hikes p,
+.hikes-items p,
+.guid-info {
+  max-width: 330px;
+  text-align: left;
+  margin: 20px auto;
+}
+.guid-info {
+  text-align: center;
+  line-height: 30px;
+}
+.cta {
+  font-family: "optima";
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #8c5320;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+.cta:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.intro-button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #8c5320;
+  border-radius: 5px;
+  margin: 150px auto 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 150px;
+}
+.intro-button:hover {
+  color: #000000;
+  border: #000000 solid 1px;
+}
+
+.footer-container,
+#copy-right {
+  background-color: #8c5320;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.link-wrapper a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  margin: 15px;
+}
+
+#copy-right {
+  text-align: center;
+  padding: 10px;
+  margin: 0%;
+}
+
+/* Hikes Page */
+.hikes-items h3 {
+  max-width: 280px;
+  margin: 0px auto;
+}
+.hikes-items {
+  min-height: 730px;
+}
+.hikes-container {
+  margin-bottom: 20px;
+}
+
+/* About Page */
+.about-text {
+  max-width: 85%;
+  margin: 5px auto;
+}
+.about-text p,
+.hikes-items {
+  line-height: 30px;
+}
+.about-text h3 {
+  font-family: "optima";
+}
+
+/* Conact */
+
+.contact-container {
+  background-image: url(../images/form-background.jpg);
+  min-height: 700px;
+  background-size: cover;
+  max-width: 100%;
+  background-position: center;
+}
+.contact-container p {
+  text-align: center;
+}
+.form-container {
+  background-color: #d0e4fa;
+  max-width: 70%;
+  min-height: 500px;
+  margin: auto;
+  border-radius: 5px;
+  padding: 15px 0px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: auto;
+}
+
+input,
+textarea {
+  background: none;
+  border: #707070 solid 1px;
+  border-radius: 2px;
+  font-size: 19px;
+  margin: 10px 0px;
+}
+form a {
+  text-decoration: none;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  background-color: #8c5320;
+  color: #ffffff;
+  max-width: 140px;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 5px auto;
+  font-weight: 600;
+}
+form a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+@media (max-width: 900px) {
+  #hamburger-menu,
+  .hamburger-label {
+    display: block;
+  }
+  nav,
+  #hamburger-menu {
+    display: none;
+  }
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  .hamburger-label {
+    float: right;
+    margin: 20px;
+    color: #8c5320;
+  }
+
+  nav {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    padding: 10px;
+    background: #8c5320;
+  }
+  ul li {
+    display: block;
+    text-align: center;
+    margin: 60px 30px;
+  }
+  li {
+    padding: 8px 0px;
+    list-style: none;
+  }
+
+  /* Conact */
+  .form-container {
+    max-width: 80%;
+  }
+  form {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .intro-background,
+  .hikes-background,
+  .about-background,
+  .contact-background {
+    min-height: 400px;
+  }
+
+  h1,
+  h2 {
+    padding: 0;
+    font-size: 20px;
+  }
+  .intro-button {
+    margin: 50px auto 0px;
+  }
+
+  .text,
+  .hikes-text {
+    max-width: 98%;
+  }
+
+  .section-container img,
+  .hikes-container img,
+  .short-hikes-container img,
+  .long-hikes-container img,
+  .camping-hikes-container img {
+    max-width: 100%;
+  }
+  .hikes,
+  .hikes-items,
+  .short-hikes-container,
+  .long-hikes-container,
+  .camping-hikes-container {
+    max-width: 95%;
+    min-height: 570px;
+  }
+  .hikes-items {
+    min-height: 740px;
+  }
+
+  .section-container,
+  .hikes-container,
+  .short-hikes-container,
+  .long-hikes-container,
+  .camping-hikes-container,
+  .guid-container,
+  .footer-container {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+
+  .download-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Conact */
+  .form-container {
+    max-width: 90%;
+  }
+  form {
+    max-width: 90%;
+  }
+}
