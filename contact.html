@@ -13,10 +13,11 @@
     <title>Contact</title>
   </head>
   <body>
-    <header class="contact-background">
+    <header class="contact-background background-wrapper">
       <a href="index.html"><img src="../images/icon.svg" class="icon" alt="a logo icon of hike adventure" /></a>
-      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-2x fa-bars" tabindex="0"></i></label>
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-3x fa-bars" tabindex="0"></i></label>
       <input type="checkbox" id="hamburger-menu" />
+      <label class="close" for="close-menu"><i class="fas fa-3x fa-times-circle"></i></label>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -38,16 +39,21 @@
         <p>Sentrumsvegen 75, 3550 Gol</p>
       </div>
       <div class="form-container">
-        <form method="POST">
-          <label for="name">Name/Last name</label>
-          <input type="text" name="name" id="name" name="name" />
+        <form method="POST" id="form"  >
+          <div class="validation-error" id="success">Thank you for submitting !</div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name"/>
+          <div class="validation-error" id="nameerror">You must enter your name</div>
           <label for="email">Email</label>
           <input type="text" name="email" id="email" />
+          <div class="validation-error" id="emailerror">Please write the email address like this: example@company.com</div>
           <label for="phone">Phone</label>
           <input type="text" name="phone" id="phone" />
+          <div class="validation-error" id="phoneerror">Phone number is in valid</div>
           <label for="text">Message</label>
-          <textarea name="text" id="text" cols="80" rows="10"></textarea>
-          <a href="#" type="submit">SEND MESSAGE</a>
+          <textarea name="text" id="message" cols="80" rows="10"></textarea>
+          <div class="validation-error" id="messageerror">Message must have minimum 20 characters</div>
+          <button type="submit" class="button">SUBMIT</button>
         </form>
       </div>
     </main>
@@ -55,7 +61,7 @@
       <div class="footer-container">
         <div class="footer-icons">
           <div>
-            <a href="index.html"><img src="../images/icon.svg" class="icon" alt="a logo icon of hike adventure" /></a>
+            <a href="index.html"><img src="../images/icon.svg" class="icon" alt="a logo of hike adventure" /></a>
           </div>
           <div>
             <a href=""><img src="../images/icon-facebook.svg" alt="an icon of facebook" /></a>
@@ -80,5 +86,7 @@
       </div>
       <p id="copy-right">© 2021 Hike Adventure</p>
     </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
