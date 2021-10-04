@@ -84,18 +84,14 @@ nav li a:hover,
 p,
 form label,
 a {
-  font-family: "optima";
+  font-family: "optima", arial,sans-serif;
 }
 h1 {
   padding: 0;
   font-size: 25px;
 }
 
-h3,
-p,
-.link-wrapper a {
-  font-size: 19px;
-}
+
 .intro-text,
 .tour-text h1,
 .short-hikes-text h1,
@@ -306,13 +302,14 @@ footer {
   min-height: 500px;
   margin: auto;
   border-radius: 5px;
-  padding: 15px 0px;
+  padding: 40px 0px;
 }
 form {
   display: flex;
   flex-direction: column;
   max-width: 60%;
   margin: auto;
+  position: relative;
 }
 
 input,
@@ -323,17 +320,18 @@ textarea {
   font-size: 19px;
   margin: 10px 0px;
 }
-form a {
+.submit-cta{
   text-decoration: none;
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: "Palatino Bold", Helvetica, sans-serif;
   background-color: #8c5320;
   color: #ffffff;
-  max-width: 140px;
-  padding: 7px;
-  border-radius: 5px;
-  margin: 5px auto;
-  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin: 10px auto;
+ 
+
 }
+
 .validation-error {
   display: none;
   color: red;
@@ -341,9 +339,9 @@ form a {
 }
 
 #success {
-  position: relative;
-  top: 0%;
-  left: 0%;
+  position: absolute;
+  top: -5%;
+  left: 30%;
   border: 2px solid green;
   border-radius: 5px;
   margin: 0px auto;
@@ -431,6 +429,11 @@ form a:hover {
 }
 
 @media (max-width: 500px) {
+  ul li {
+   padding-right:50px ;
+    margin: 60px 0px;
+  }
+
   .intro-background,
   .hikes-background,
   .about-background,
@@ -447,9 +450,10 @@ form a:hover {
     margin: 50px auto 0px;
   }
 
-  .text,
-  .hikes-text {
+  .text, .hikes p,
+  .hikes-text, .hikes-items p {
     max-width: 98%;
+    padding-left:15px ;
   }
 
   .section-container img,
@@ -465,27 +469,33 @@ form a:hover {
   .long-hikes-container,
   .camping-hikes-container {
     max-width: 95%;
-    min-height: 570px;
+ 
   }
-  .hikes-items {
-    min-height: 740px;
-  }
-  .hikes {
-    min-height: 630px;
-  }
+  
+  
   .section-container,
   .hikes-container,
   .short-hikes-container,
   .long-hikes-container,
-  .camping-hikes-container,
+  .camping-hikes-container,.guid-container,
   .footer-container {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  }
+    padding:0px ;
 
+  }
+  
+  .guid-info  {
+    max-width: 300px;
+    
+  }
   .download-icons {
     display: flex;
     flex-direction: column;
   }
+  /* About */
+  .about-text p, .about-text h3 {
+    padding: 0px 10px;
+}
 
   /* Conact */
   .form-container {
@@ -493,5 +503,12 @@ form a:hover {
   }
   form {
     max-width: 90%;
+  }
+  #success {
+    
+    top: -6%;
+    left: 8%;
+    
+  
   }
 }
