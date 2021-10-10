@@ -40,6 +40,7 @@ body {
   margin: 10px 20px;
 }
 nav {
+
   float: right;
   padding: 0px 70px;
 }
@@ -273,7 +274,7 @@ footer {
 
 /* About Page */
 .about-text {
-  max-width: 700px;
+  max-width: 650px;
   margin: 5px auto;
 }
 .about-text p,
